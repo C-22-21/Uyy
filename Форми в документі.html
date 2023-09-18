@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма для особистої інформації</title>
+</head>
+<body>
+
+<h2>Введіть свою особисту інформацію:</h2>
+
+<form action="/submit.php" method="post">
+    <label for="ім'я">Ім'я:</label>
+    <input type="text" id="ім'я" name="ім'я" required><br><br>
+
+    <label for="прізвище">Прізвище:</label>
+    <input type="text" id="прізвище" name="прізвище" required><br><br>
+
+    <label for="email">Адреса електронної пошти:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="пароль">Пароль:</label>
+    <input type="password" id="пароль" name="пароль" required><br><br>
+
+    <input type="submit" value="Відправити">
+</form>
+
+</body>
+</html>
