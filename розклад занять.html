@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Розклад занять та реєстрація</title>
+    <style>
+        /* Глобальні стилі */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex; /* Відображати дітей в рядок */
+            align-items: flex-start; /* Вирівнювання по верхньому краю */
+        }
+
+        table {
+            flex: 1; /* Таблиця займає половину доступної ширини */
+            border-collapse: collapse;
+            background-color: #f6f6f6;
+        }
+
+        /* Стилі таблиці (аналогічно вашому початковому коду) */
+        td, th {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: brown;
+            color: white;
+            border-radius: 0;
+            position: sticky;
+            top: 0;
+        }
+
+        .primary {
+            background-color: #1E90FF;
+        }
+
+        tfoot > tr {
+            background: black;
+            color: white;
+        }
+
+        tbody > tr:hover {
+            background-color: #ffc107;
+        }
+
+        /* Стилі форми (аналогічно вашому початковому коду) */
+        form {
+            flex: 1; /* Форма займає половину доступної ширини */
+            margin-left: 250px; /*  відступ зліва */
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        img {
+            display: block;
+            margin: 0px auto;
+        }
+    </style>
+</head>
+<body>
+<img src="https://th.bing.com/th/id/OIP.qn6zT-83A7cz2Jf8m6iQpwHaHa?pid=ImgDet&rs=1" alt="Логотип установи">
+<h1 align="center" >Розклад занять для групи C-22</h1>
+<div class="container">
+
+    <table>
+        
+        <thead>
+        <tr>
+            <th class="primary" scope="col">Дні тижня</th>
+            <th scope="col">Понеділок</th>
+            <th scope="col">Вівторок</th>
+            <th scope="col">Середа</th>
+            <th scope="col">Четвер</th>
+            <th scope="col">П'ятниця</th>
+            <th scope="col">Субота</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+		  <th scope="row">08:30-10:05</th>
+		  <td>Фізичне виховання</td>
+		  <td>Фізичне виховання</td>
+		  <td>ТІМ</td>
+		  <td>ТС</td>
+		  <td>Фізичне виховання</td>
+		  <td>СР</td>
+		</tr>
+		<tr>
+		  <th scope="row">10:30-12:00</th>
+		  <td>Право</td>
+		  <td>ТІМ</td>
+		  <td>СР</td>
+		  <td>ТС</td>
+		  <td>Право</td>
+		  <td>СР</td>
+		</tr>
+		<tr>
+		  <th scope="row">12:20-13:55</th>
+		  <td>Іноземна мова</td>
+		  <td>Програмування</td>
+		  <td>Іноземна мова</td>
+		  <td>ТІМ</td>
+		  <td>ТІК</td>
+		  <td>СР</td>
+		</tr>
+		<tr>
+		  <th scope="row">16:10-17:45</th>
+		  <td>СР</td>
+		  <td>СР</td>
+		  <td>Програмування</td>
+		  <td>СР</td>
+		  <td>СР</td>
+		</tr>
+	  </tbody>
+    </table>
+    <form action="роздільник_для_відправки_даних.php" method="post">
+        <h2>Форма реєстрації</h2>
+        <!-- Ваші поля форми тут -->
+        <label for="ім'я">Ім'я:</label>
+        <input type="text" id="ім'я" name="ім'я" required>
+
+        <label for="прізвище">Прізвище:</label>
+        <input type="text" id="прізвище" name="прізвище" required>
+
+        <label for="електронна_пошта">Електронна пошта:</label>
+        <input type="email" id="електронна_пошта" name="електронна_пошта" required>
+
+        <label for="пароль">Пароль:</label>
+        <input type="password" id="пароль" name="пароль" required>
+
+        <label for="підтвердження_пароля">Підтвердження пароля:</label>
+        <input type="password" id="підтвердження_пароля" name="підтвердження_пароля" required>
+
+        <input type="submit" value="Зареєструватися">
+    </form>
+</div>
+
+
+</body>
+</html>
