@@ -20,6 +20,6 @@
 
 /* Рамки */
 .border {
-    border: 20px dotted #EE0000;
+    border: 2px dotted #EE0000;
     border-radius: 10px;
 }
