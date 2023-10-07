@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-image: url('https://scontent.fiev7-3.fna.fbcdn.net/v/t39.30808-6/370839605_204346292638980_1822627426513837400_n.jpg?stp=dst-jpg_s960x960&_nc_cat=100&ccb=1-7&_nc_sid=52f669&_nc_ohc=rKvhTO4tBq4AX-Dm77k&_nc_ht=scontent.fiev7-3.fna&oh=00_AfCQvoXLV1Y6ng8JFCjHi-370w-MI22Jt7aMZZNjuGaqoA&oe=65211C08');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.content {
+  padding: 20px;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+.form {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.table {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
