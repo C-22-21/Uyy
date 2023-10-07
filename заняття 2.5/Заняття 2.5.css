@@ -1,0 +1,47 @@
+/* Загальні стилі для всіх блоків */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Стилі для блоків зі статичним позиціонуванням */
+.static {
+    background-color: lightblue;
+}
+
+/* Стилі для блоків з відносним позиціонуванням */
+.relative {
+    background-color: lightgreen;
+    position: relative;
+    top: -20px;
+    right: 20px;
+}
+
+/* Стилі для блоків з абсолютним позиціонуванням */
+.absolute {
+    background-color: lightcoral;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+/* Стилі для блоків з фіксованим позиціонуванням */
+.fixed {
+    background-color: lightyellow;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
