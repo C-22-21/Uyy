@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes of Might and Magic 5</title>
+    <style>
+        /* Стилі для прикладу */
+        body {
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .game-background {
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        #game-title {
+            font-size: 24px;
+            color: #333;
+        }
+        .start-button {
+            background-color: #ff9900;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-background">
+        <h1 id="game-title">Heroes of Might and Magic 5</h1>
+        <img id="hero-image" src="новий-шлях-до-зображення.jpg" alt="Hero">
+        <button id="new-game-button" class="start-button">Почати гру</button>
+        <button id="back-button">Назад</button>
+    </div>
+
+    <script>
+       // Змінюємо стиль тексту заголовка гри
+		const gameTitle = document.getElementById('game-title');
+		gameTitle.style.color = 'yellow';
+		gameTitle.style.fontSize = '24px';
+
+		// Змінюємо текст кнопки "Старт гри"
+		const startButton = document.querySelector('.start-button');
+		startButton.textContent = 'Почати гру';
+
+		// Змінюємо фон елементу за його класом
+		const gameBackground = document.querySelector('.game-background');
+		gameBackground.style.backgroundColor = 'green';
+		// Змінюємо атрибут "src" зображення героя за його id
+const heroImage = document.getElementById('hero-image');
+heroImage.src = 'Agrael.jpg';
+
+// Отримуємо батьківський елемент кнопки "Назад"
+const backButton = document.getElementById('back-button');
+const parentElement = backButton.parentElement;
+
+// Видаляємо клас "active" з батьківського елемента
+parentElement.classList.remove('active');
+// Додаємо обробник події кліку на кнопці "Нова гра"
+const newGameButton = document.getElementById('new-game-button');
+newGameButton.addEventListener('click', function() {
+  alert('Ви почали нову гру!');
+});
+
+// Додаємо обробник події наведення курсору на зображення героя
+heroImage.addEventListener('mouseover', function() {
+  heroImage.style.opacity = 0.7;
+});
+
+// Додаємо обробник події виїзду курсору з зображення героя
+heroImage.addEventListener('mouseout', function() {
+  heroImage.style.opacity = 1.0;
+});
+    </script>
+</body>
+</html>
