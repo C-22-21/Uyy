@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Робота з подіями</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0; /* Основний фон */
+            color: #333; /* Основний колір тексту */
+        }
+        h1 {
+            color: #0066cc; /* Колір заголовку */
+        }
+        button {
+            background-color: #4caf50; /* Основний колір кнопки */
+            color: #fff; /* Колір тексту на кнопці */
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049; /* Колір кнопки при наведенні */
+        }
+        input {
+            padding: 8px;
+            margin: 5px 0;
+        }
+        #myElement {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        // Завдання 1: Робота з подіями миші
+        function handleClick() {
+            alert("Кнопка була натиснута!");
+        }
+
+        // Завдання 2: Обробка подій клавіатури
+        function handleKeyPress() {
+            console.log("Клавіша була натиснута!");
+        }
+
+        // Завдання 3: Робота з фокусом
+        function handleFocus() {
+            alert("Елемент отримав фокус!");
+        }
+
+        function handleBlur() {
+            alert("Елемент втратив фокус!");
+        }
+
+        // Завдання 4: Робота з обʼєктом document
+        function handleLoad() {
+            alert("Документ повністю завантажено!");
+        }
+
+        // Завдання 5: Використання addEventListener
+        function handleEvent1() {
+            alert("Подія виникла!");
+        }
+
+        function handleEvent2() {
+            alert("Ще один обробник події!");
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var myElement = document.getElementById("myElement");
+            myElement.addEventListener("click", handleEvent1);
+            myElement.addEventListener("click", handleEvent2);
+        });
+    </script>
+</head>
+<body onload="handleLoad()">
+    <h1>Робота з подіями</h1>
+    <p>Це HTML-документ, який демонструє різні способи роботи з подіями.</p>
+    <!-- Завдання 1: Робота з подіями миші -->
+    <button id="myButton" onclick="handleClick()">Натисніть мене</button>
+    <!-- Завдання 2: Обробка подій клавіатури -->
+    <input type="text" onkeypress="handleKeyPress()">
+    <!-- Завдання 3: Робота з фокусом -->
+    <input type="text" onfocus="handleFocus()" onblur="handleBlur()">
+    <!-- Завдання 5: Використання addEventListener -->
+    <div id="myElement">Це елемент, для якого додано два обробники подій</div>
+</body>
+</html>
