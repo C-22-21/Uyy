@@ -1,0 +1,73 @@
+/* Горизонтальна панель навігації */
+.horizontal-navigation {
+    background-color: #ff6600;
+    overflow: hidden;
+}
+
+.horizontal-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-navigation li {
+    float: left;
+}
+
+.horizontal-navigation a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.horizontal-navigation .icon,
+.horizontal-navigation .icon::before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ffcc00; 
+}
+
+.horizontal-navigation a:hover {
+    background-color: #ffcc00; 
+    color: black;
+}
+
+/* Вертикальна панель навігації */
+.vertical-navigation {
+    width: 200px;
+    background-color: #3399ff; 
+    padding-top: 20px;
+}
+
+.vertical-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.vertical-navigation li {
+    padding: 8px;
+    text-align: center;
+}
+
+.vertical-navigation a {
+    text-decoration: none;
+    color: #fff; 
+    display: block;
+}
+
+.vertical-navigation .divider,
+.vertical-navigation .divider::before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ff3399; 
+}
+
+.vertical-navigation a:hover {
+    background-color: #ff3399; 
+}
